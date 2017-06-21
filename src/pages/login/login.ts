@@ -1,7 +1,8 @@
 import { Component } from '@angular/core';
 import { NavController, AlertController, LoadingController } from 'ionic-angular';
 
-import { Auth, User, UserDetails, IDetailedError } from '@ionic/cloud-angular';
+import { Auth, User, UserDetails, IDetailedError, Push, PushToken  } from '@ionic/cloud-angular';
+//import { Push } from '@ionic-native/push';
 
 import { HomePage } from '../home/home';
 
@@ -17,7 +18,8 @@ export class LoginPage {
   password:string = '';
   name:string = '';
 
-  constructor(public navCtrl: NavController, public auth: Auth, public user: User, public alertCtrl: AlertController, public loadingCtrl:LoadingController) {}
+  constructor(public navCtrl: NavController, public auth: Auth, public user: User, public alertCtrl: AlertController, public loadingCtrl:LoadingController, public push: Push) {}
+
 
   	login() {
   		console.log('process login');
@@ -44,6 +46,31 @@ export class LoginPage {
 		.then( () => {
 
         	console.log('user successfully logged in');
+
+		  	// register app to the Ionic Push service
+		  	// save push token to authenticated user.
+			this.push.register().then((t: PushToken) => {
+			  // https://docs.ionic.io/api/client/push/#saveToken
+			  // token is associated with user
+			  return this.push.saveToken(t);
+			}).then((t: PushToken) => {
+			  console.log('Token saved:', t.token);
+			});
+
+			// subscribe to Ionic Push notifications
+			this.push.rx.notification().subscribe( (msg) => {
+			    console.log(msg.title + ': ' + msg.text);
+
+			    // handle notifications
+				let alert = this.alertCtrl.create({
+		            title:'Push Notification on Register Callback: '+msg.title, 
+		            subTitle: msg.text,
+		            buttons:['OK']
+		        });
+		        alert.present();
+
+			});
+
         	loader.dismissAll();
         	this.navCtrl.setRoot(HomePage);        
       	}, 

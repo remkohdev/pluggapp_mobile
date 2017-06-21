@@ -1,9 +1,11 @@
 import { Component } from '@angular/core';
-import { NavController } from 'ionic-angular';
+import { NavController, AlertController } from 'ionic-angular';
 
-import { Auth, User, UserDetails, IDetailedError } from '@ionic/cloud-angular';
+//UserDetails, IDetailedError, PushToken 
+import { Auth, User } from '@ionic/cloud-angular';
 
 import { LoginPage } from '../login/login';
+
 
 @Component({
   selector: 'page-home',
@@ -17,10 +19,13 @@ export class HomePage {
   password:string = '';
   name:string = '';
 
-  constructor(public navCtrl: NavController, public auth: Auth, public user: User) {}
-
-  	// LOGOUT
+  constructor(public navCtrl: NavController, public alertCtrl: AlertController, public auth: Auth) {}
+ 
+  // LOGOUT
 	logout() {
+
+    this.push.unregister();
+
 		this.auth.logout();
 		this.navCtrl.setRoot(LoginPage); 
 	}
