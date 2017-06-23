@@ -2,7 +2,6 @@ import { Component } from '@angular/core';
 import { NavController, AlertController, LoadingController } from 'ionic-angular';
 
 import { Auth, User, UserDetails, IDetailedError, Push, PushToken  } from '@ionic/cloud-angular';
-//import { Push } from '@ionic-native/push';
 
 import { HomePage } from '../home/home';
 
