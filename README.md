@@ -40,16 +40,21 @@ npm install --save @ionic-native/push
 npm -g install Appium
 ```
 
-To be done:
+## To be done:
 
-1. Use separate Ionic Modals for both Signup as Login.
-2. Add Signup/Login Options
+* Add [Angular Testing](https://angular.io/guide/testing) framework to Ionic2 app:
+  * [Jasmine](https://jasmine.github.io) for basic tests
+  * [Karma](https://karma-runner.github.io) for writing and running unit tests
+  * [Protractor](http://www.protractortest.org/) for e2e user experience tests
+  * Optional: Appium, Selenium, Mocha, Istanbul Code coverage, et al 
+* Use separate Ionic Modals for both Signup as Login.
+* Add Signup/Login Options
   1. Add Facebook Signup/Login
   2. Add Instagram Signup/Login
   3. Add Twitter Signup/Login
   4. Add Loopback.io Signup/Login
-3. Add IBM MobileFirst Authentication
-4. Add IBM MobileFirst Push Notifications
-5. Try Google Firebase services
-6. Try AWS mobile services
-7. Try Azure mobile services
+* Add IBM MobileFirst Authentication
+* Add IBM MobileFirst Push Notifications
+* Try Google Firebase services
+* Try AWS mobile services
+* Try Azure mobile services
