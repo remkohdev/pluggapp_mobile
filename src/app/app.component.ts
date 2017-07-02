@@ -24,7 +24,7 @@ export class MyApp {
       splashScreen.hide();
 
       if(this.auth.isAuthenticated()){
-          this.rootPage = HomePage;
+          this.rootPage = TabsPage;
       }else{
           this.rootPage = LoginPage;
       }
