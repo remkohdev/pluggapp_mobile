@@ -35,10 +35,11 @@ You can manage Ionic apps that are linked to the Ionic Cloud service in the [Ion
 ionic cordova plugin add phonegap-plugin-push --variable SENDER_ID=86595768696 --save
 npm install --save @ionic-native/push
 ```
-5. Add Appium test
+5. Use the generator to create an AuthService,
 ```bash
-npm -g install Appium
+$ ionic generate provider AuthService
 ```
+to create a new provider in the ''~/src/providers' directory
 
 ## To be done:
 
@@ -46,7 +47,7 @@ npm -g install Appium
   * [Jasmine](https://jasmine.github.io) for basic tests
   * [Karma](https://karma-runner.github.io) for writing and running unit tests
   * [Protractor](http://www.protractortest.org/) for e2e user experience tests
-  * Optional: Appium, Selenium, Mocha, Istanbul Code coverage, et al 
+  * Optional: Appium, Selenium, Mocha, Istanbul Code coverage, et al
 * Use separate Ionic Modals for both Signup as Login.
 * Add Signup/Login Options
   1. Add Facebook Signup/Login
