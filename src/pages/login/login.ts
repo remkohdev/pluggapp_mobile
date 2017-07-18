@@ -1,8 +1,6 @@
 import { Component } from '@angular/core';
 import { NavController, AlertController, LoadingController } from 'ionic-angular';
-
 import { Auth, User, UserDetails, IDetailedError, Push, PushToken  } from '@ionic/cloud-angular';
-
 import { HomePage } from '../home/home';
 
 @Component({
@@ -17,95 +15,122 @@ export class LoginPage {
   password:string = '';
   name:string = '';
 
-  constructor(public navCtrl: NavController, public auth: Auth, public user: User, public alertCtrl: AlertController, public loadingCtrl:LoadingController, public push: Push) {}
+  constructor(public navCtrl: NavController, public auth: Auth, public user: User, public alertCtrl: AlertController, public loadingCtrl:LoadingController, public push: Push) {
+    if (this.auth.isAuthenticated()) {
+      this.navCtrl.push(HomePage);
+    }
+  }
 
+	login(type) {
 
-  	login() {
-  		console.log('process login');
-  		this.showLogin = true;
+    let loader = this.loadingCtrl.create({
+        content: "Logging in..."
+    });
 
-  		// login input validation
-  		if(this.email === '' || this.password === '') {
+    loader.present();
+
+    setTimeout(() => {
+      loader.dismiss();
+    }, 5000);
+
+    if(type == 'instagram'){
+      this.auth.login('instagram').then((res) => {
+
+        loader.dismiss();
+        this.navCtrl.push(HomePage);
+
+      }, (err) => {
+
+        loader.dismiss();
         let alert = this.alertCtrl.create({
-	        	title:'Register Error', 
-	        	subTitle:'All fields are rquired',
-	        	buttons:['OK']
-	        });
-	        alert.present();
-	        return;
-	    }     
+          title: "Error while logging in to Instagram.",
+          subTitle: 'Please try again.',
+          buttons: ['OK']
+        });
+        alert.present();
 
-	    // 
-	    let loader = this.loadingCtrl.create({
-	        content: "Logging in..."
-	    });
-	    loader.present();
+      });
+    }
+    else {
+      console.log('process login');
+      this.showLogin = true;
 
-		this.auth.login('basic', { 'email':this.email, 'password':this.password } )
-		.then( () => {
+      // login input validation
+      if(this.email === '' || this.password === '') {
+        let alert = this.alertCtrl.create({
+            title:'Register Error',
+            subTitle:'All fields are rquired',
+            buttons:['OK']
+          });
+          alert.present();
+          return;
+      }
 
-        	console.log('user successfully logged in');
+      this.auth.login('basic', { 'email':this.email, 'password':this.password } )
+      .then( () => {
 
-		  	// register app to the Ionic Push service
-		  	// save push token to authenticated user.
-			this.push.register().then((t: PushToken) => {
-			  // https://docs.ionic.io/api/client/push/#saveToken
-			  // token is associated with user
-			  return this.push.saveToken(t);
-			}).then((t: PushToken) => {
-			  console.log('Token saved:', t.token);
-			});
+        console.log('user successfully logged in');
 
-			// subscribe to Ionic Push notifications
-			this.push.rx.notification().subscribe( (msg) => {
-			    console.log(msg.title + ': ' + msg.text);
+        // register app to the Ionic Push service
+        // save push token to authenticated user.
+        this.push.register().then((t: PushToken) => {
+          // https://docs.ionic.io/api/client/push/#saveToken
+          // token is associated with user
+          return this.push.saveToken(t);
+        }).then((t: PushToken) => {
+          console.log('Token saved:', t.token);
+        });
 
-			    // handle notifications
-				let alert = this.alertCtrl.create({
-		            title:'Push Notification on Register Callback: '+msg.title, 
-		            subTitle: msg.text,
-		            buttons:['OK']
-		        });
-		        alert.present();
+        // subscribe to Ionic Push notifications
+        this.push.rx.notification().subscribe( (msg) => {
+          console.log(msg.title + ': ' + msg.text);
 
-			});
+        // handle notifications
+        let alert = this.alertCtrl.create({
+          title:'Push Notification on Register Callback: '+msg.title,
+          subTitle: msg.text,
+          buttons:['OK']
+        });
+        alert.present();
 
-        	loader.dismissAll();
-        	this.navCtrl.setRoot(HomePage);        
-      	}, 
-      	(err) => {
-        	loader.dismissAll();
+        });
 
-        	console.log(err.message);
+        loader.dismissAll();
+        this.navCtrl.setRoot(HomePage);
+      },
+      (err) => {
+        loader.dismissAll();
 
-        	let errors = '';
+        console.log(err.message);
 
-        	if(err.message === 'UNPROCESSABLE ENTITY') errors += 'Email isn\'t valid.<br/>';
-        	if(err.message === 'UNAUTHORIZED') errors += 'Password is required.<br/>';
+        let errors = '';
 
-        	let alert = this.alertCtrl.create({
-          		title:'Login Error', 
-          		subTitle:errors,
-          		buttons:['OK']
-        	});
-        	alert.present();
-      	});
+        if(err.message === 'UNPROCESSABLE ENTITY') errors += 'Email isn\'t valid.<br/>';
+        if(err.message === 'UNAUTHORIZED') errors += 'Password is required.<br/>';
+
+        let alert = this.alertCtrl.create({
+            title:'Login Error',
+            subTitle:errors,
+            buttons:['OK']
+        });
+        alert.present();
+      });
+    }
 	}
-
 
 	signup() {
 		console.log('process signup');
 		this.showLogin = false;
-		
+
 	  	let details: UserDetails = {
-	  		'email': this.email, 
+	  		'email': this.email,
 	  		'password': this.password
 	  	};
 
 		this.auth.signup(details).then( () => {
 			// 'this.user' is now registered
 			this.showLogin = true;
-			
+
 		}, (err: IDetailedError<string[]>) => {
 		  	for (let e of err.details) {
 		    	if (e === 'conflict_email') {
@@ -115,7 +140,7 @@ export class LoginPage {
 		    	}
 		  	}
 		} );
-		
+
 	}
 
 }
