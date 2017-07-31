@@ -1,35 +1,41 @@
-import { Component } from '@angular/core';
-import { Platform } from 'ionic-angular';
+import { Component, OnInit } from '@angular/core';
+import { Platform, AlertController } from 'ionic-angular';
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
 
 import { TabsPage } from '../pages/tabs/tabs';
-import { HomePage } from '../pages/home/home';
 import { LoginPage } from '../pages/login/login';
 
-import { Auth } from '@ionic/cloud-angular';
+import { AuthServiceProvider } from '../providers/auth-service/auth-service';
 
 @Component({
   templateUrl: 'app.html'
 })
 
-export class MyApp {
+export class MyApp implements OnInit {
+
   rootPage:any = TabsPage;
 
-  constructor(platform: Platform, statusBar: StatusBar, splashScreen: SplashScreen, public auth:Auth) {
+  constructor(public platform: Platform,
+              public statusBar: StatusBar,
+              public splashScreen: SplashScreen,
+              public authService: AuthServiceProvider,
+              public alertCtrl: AlertController) {
 
     platform.ready().then(() => {
 
       statusBar.styleDefault();
       splashScreen.hide();
 
-      if(this.auth.isAuthenticated()){
+      if(this.authService.isAuthenticated()){
           this.rootPage = TabsPage;
       }else{
           this.rootPage = LoginPage;
       }
 
     });
-
   }
+
+  ngOnInit(): void { }
+
 }

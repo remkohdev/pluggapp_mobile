@@ -1,10 +1,12 @@
 import { Component } from '@angular/core';
 import { NavController, AlertController } from 'ionic-angular';
 
-import { Auth, Push } from '@ionic/cloud-angular';
+import { Push } from '@ionic/cloud-angular';
 
 import { LoginPage } from '../login/login';
 import { PromotionModel } from '../../../models/promotion-model';
+
+import { AuthServiceProvider } from '../../providers/auth-service/auth-service';
 
 @Component({
   selector: 'page-home',
@@ -13,27 +15,18 @@ import { PromotionModel } from '../../../models/promotion-model';
 
 export class HomePage {
 
-  showLogin:boolean = true;
-  email:string = '';
-  password:string = '';
-  name:string = '';
-  promotion:PromotionModel = null; 
+  promotion:PromotionModel = null;
 
   constructor(public navCtrl: NavController, public alertCtrl: AlertController,
-    public auth: Auth, public push: Push) {
+    public authService: AuthServiceProvider, public push: Push) {
 
       this.promotion = new PromotionModel('Promotion One');
+  }
 
-    }
-
-  // LOGOUT
 	logout() {
 
-    this.push.unregister();
-    // .then(() => {})
-
-		this.auth.logout();
-		this.navCtrl.setRoot(LoginPage);
+		this.authService.logout();
+    this.navCtrl.setRoot(LoginPage);
 	}
 
 }
