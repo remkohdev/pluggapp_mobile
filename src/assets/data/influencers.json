@@ -1,0 +1,80 @@
+{
+  "influencers" : [
+    {
+      "id" : 1,
+      "username" : "Greg"
+      "channels" : [
+        {
+          "channel" : "Instagram",
+          "username" : "devourpower",
+          "profile_picture" : "https://www.dropbox.com/s/txp3tsuylhtdogs/DevourPower.png?dl=0",
+          "followers" : 431000,
+          "following" : 372,
+          "posts" : 3486,
+          "joined" : "2012-03-01",
+          "location" : "Brooklyn, NY, USA"
+        },
+        {
+          "channel" : "Twitter",
+          "username" : "PowertoDevour",
+          "followers" : 870,
+          "following" : 1689,
+          "tweets" : 15400,
+          "joined" : "2009-11-01",
+          "location" : "New York, NY, USA"
+        },
+        {
+          "channel" : "Facebook",
+          "username" : "DevourPower",
+          "followers" : 10508,
+          "likes" : 10344
+        },
+        {
+          "channel" : "Plugd",
+          "ranking" : "95/100",
+          "connections" : 35,
+          "campaigns" : 11,
+          "money_earned" : 5500
+        }
+      ]
+    },
+    {
+      "id" : 2,
+      "username" : "Dara"
+      "channels" : [
+        {
+          "channel" : "Instagram",
+          "username" : "skinnypignyc",
+          "profile_picture" : "https://www.dropbox.com/s/fqley7bec4hopns/skinnypig.png?dl=0",
+          "followers" : 78400,
+          "following" : 757,
+          "posts" : 2231,
+          "joined" : "2011-12-01",
+          "location" : "New York, NY, USA"
+        },
+        {
+          "channel" : "Twitter",
+          "username" : "skinnypignyc",
+          "followers" : 1564,
+          "following" : 1822,
+          "tweets" : 5844,
+          "joined" : "2009-01-01",
+          "location" : "New York, NY, USA"
+        },
+        {
+          "channel" : "Facebook",
+          "username" : "skinnypignyc",
+          "followers" : 564,
+          "likes" : 566
+        },
+        {
+          "channel" : "Plugd",
+          "ranking" : "85/100",
+          "connections" : 21,
+          "campaigns" : 6,
+          "money_earned" : 1200
+        }
+      ]
+    }
+  ]
+}

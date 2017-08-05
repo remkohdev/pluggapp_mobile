@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 import { NavController, AlertController, LoadingController } from 'ionic-angular';
 import { User, UserDetails, AuthModuleId, Push, PushToken  } from '@ionic/cloud-angular';
-import { HomePage } from '../home/home';
+import { TabsPage } from '../tabs/tabs';
 
 import { AuthServiceProvider } from '../../providers/auth-service/auth-service';
 
@@ -26,7 +26,7 @@ export class LoginPage {
               public push: Push) {
 
     if (this.authService.isAuthenticated()) {
-      this.navCtrl.push(HomePage);
+      this.navCtrl.push(TabsPage);
     }
 
   }
@@ -45,7 +45,7 @@ export class LoginPage {
 
     console.log('process login');
     this.showLogin = true;
-    
+
     let moduleId: AuthModuleId = type;
     let details: UserDetails = { 'email':this.email, 'password':this.password };
 
@@ -79,7 +79,7 @@ export class LoginPage {
         });
 
         loader.dismissAll();
-        this.navCtrl.setRoot(HomePage);
+        this.navCtrl.setRoot(TabsPage);
 
     }, (errors) => {
 
