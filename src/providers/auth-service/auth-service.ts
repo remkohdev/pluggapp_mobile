@@ -2,12 +2,16 @@ import { Injectable } from '@angular/core';
 import { Http } from '@angular/http';
 import 'rxjs/add/operator/map';
 
+import { AlertController } from 'ionic-angular';
+
 import { Auth, AuthLoginResult, UserDetails, AuthModuleId, IDetailedError } from '@ionic/cloud-angular';
 
 @Injectable()
 export class AuthServiceProvider {
 
-  constructor(public http: Http, public auth: Auth) {
+  constructor(public alertCtrl: AlertController,
+              public http: Http,
+              public auth: Auth) {
     console.log('Hello AuthServiceProvider Provider');
   }
 
@@ -18,19 +22,43 @@ export class AuthServiceProvider {
   /**
    * http://legacy.docs.ionic.io/docs/user-authentication
    */
-   
+
   login(moduleId: AuthModuleId, details: UserDetails): any {
 
-    return this.auth.login(moduleId, details)
-    .then((user: AuthLoginResult) => {
-      return user;
-    }, (err) => {
-      return {error: err};
-    });
+    if(moduleId == 'instagram'){
 
+      return this.auth.login(moduleId)
+      .then((user: AuthLoginResult) => {
+        return user;
+      }, (err) => {
+        return {error: err};
+      });
+
+    }else{
+
+      // login input validation
+      if(details.email === '' || details.password === '') {
+          let alert = this.alertCtrl.create({
+              title:'Register Error',
+              subTitle:'All fields are required',
+              buttons:['OK']
+          });
+          alert.present();
+          return;
+      }
+
+      return this.auth.login(moduleId, details)
+      .then((user: AuthLoginResult) => {
+        return user;
+      }, (err) => {
+        return {error: err};
+      });
+
+    }
   }
 
   signup(details): any {
+
       // 'this.user' is now registered
       return this.auth.signup(details).then(() => {
         return {error: null};

@@ -43,23 +43,12 @@ export class LoginPage {
       loader.dismiss();
     }, 5000);
 
-    // email, password login
     console.log('process login');
     this.showLogin = true;
-
-    // login input validation
-    if(this.email === '' || this.password === '') {
-        let alert = this.alertCtrl.create({
-            title:'Register Error',
-            subTitle:'All fields are rquired',
-            buttons:['OK']
-        });
-        alert.present();
-        return;
-    }
-
-    let moduleId: AuthModuleId = 'basic';
+    
+    let moduleId: AuthModuleId = type;
     let details: UserDetails = { 'email':this.email, 'password':this.password };
+
     this.authService.login(moduleId, details)
     .then( (user) => {
 
@@ -111,7 +100,14 @@ export class LoginPage {
 		this.authService.signup(details).then( () => {
 			// 'this.user' is now registered
 			this.showLogin = true;
-		});
+      let alert = this.alertCtrl.create({
+        title:'You successfully signed up',
+        buttons:['OK']
+      });
+      alert.present();
+		}, (errors) => {
+
+    });
 
 	}
 
