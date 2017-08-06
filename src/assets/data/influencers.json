@@ -2,12 +2,17 @@
   "influencers" : [
     {
       "id" : 1,
-      "username" : "Greg"
+      "username" : "Greg",
+      "profile_picture" : "https://photos-2.dropbox.com/t/2/AAAcuNRrYc3Zn7T4Uu8aU39I3oiJG6pJRdlT91LElyEmuw/12/665332207/png/32x32/3/1502067600/0/2/DevourPower.png/EN2R7bYFGEQgBygH/kf_5oGcPbBSwr9WkbmfZfQD3Bain70bJtiAebAetmOE?dl=0&size=1280x960&size_mode=3",
+      "ranking" : "95/100",
+      "connections" : 35,
+      "campaigns" : 11,
+      "money_earned" : 5500,
       "channels" : [
         {
           "channel" : "Instagram",
           "username" : "devourpower",
-          "profile_picture" : "https://www.dropbox.com/s/txp3tsuylhtdogs/DevourPower.png?dl=0",
+          "profile_picture" : "https://photos-2.dropbox.com/t/2/AAAcuNRrYc3Zn7T4Uu8aU39I3oiJG6pJRdlT91LElyEmuw/12/665332207/png/32x32/3/1502067600/0/2/DevourPower.png/EN2R7bYFGEQgBygH/kf_5oGcPbBSwr9WkbmfZfQD3Bain70bJtiAebAetmOE?dl=0&size=1280x960&size_mode=3",
           "followers" : 431000,
           "following" : 372,
           "posts" : 3486,
@@ -28,19 +33,17 @@
           "username" : "DevourPower",
           "followers" : 10508,
           "likes" : 10344
-        },
-        {
-          "channel" : "Plugd",
-          "ranking" : "95/100",
-          "connections" : 35,
-          "campaigns" : 11,
-          "money_earned" : 5500
         }
       ]
     },
     {
       "id" : 2,
-      "username" : "Dara"
+      "username" : "Dara",
+      "profile_picture" : "https://photos-4.dropbox.com/t/2/AAAjjZy8En9_ksYYPwGJkiwF3KQ6Com7JUuPJtJXS6vNRg/12/665332207/png/32x32/3/1502049600/0/2/skinnypig.png/EN2R7bYFGEQgBygH/DRHDM0bT7iW02Jdy3mC5BHBOTgr2W-xEMYU4DQKlOl4?dl=0&size=2048x1536&size_mode=3",
+      "ranking" : "85/100",
+      "connections" : 21,
+      "campaigns" : 6,
+      "money_earned" : 1200,
       "channels" : [
         {
           "channel" : "Instagram",
@@ -66,13 +69,117 @@
           "username" : "skinnypignyc",
           "followers" : 564,
           "likes" : 566
+        }
+      ]
+    },
+    {
+      "id" : 3,
+      "username" : "Justin",
+      "profile_picture" : "https://photos-6.dropbox.com/t/2/AABsCspPW-QU8CQNQOA96O6jSsMGk6x2lU6sIJzZel537Q/12/665332207/png/32x32/3/1502064000/0/2/peepmyeats.png/EN2R7bYFGEQgBygH/2a-w0_u7Rhyalrwcpp0XC-OPkccoQAZ8sfkrifDXfq0?dl=0&size=1280x960&size_mode=3",
+      "ranking" : "75/100",
+      "connections" : 15,
+      "campaigns" : 3,
+      "money_earned" : 300,
+      "channels" : [
+        {
+          "channel" : "Instagram",
+          "username" : "peepmyeats",
+          "profile_picture" : "https://photos-6.dropbox.com/t/2/AABsCspPW-QU8CQNQOA96O6jSsMGk6x2lU6sIJzZel537Q/12/665332207/png/32x32/3/1502064000/0/2/peepmyeats.png/EN2R7bYFGEQgBygH/2a-w0_u7Rhyalrwcpp0XC-OPkccoQAZ8sfkrifDXfq0?dl=0&size=1280x960&size_mode=3",
+          "followers" : 59800,
+          "following" : 871,
+          "posts" : 3791,
+          "joined" : "2013-10-01",
+          "location" : "New York, NY, USA"
         },
         {
-          "channel" : "Plugd",
-          "ranking" : "85/100",
-          "connections" : 21,
-          "campaigns" : 6,
-          "money_earned" : 1200
+          "channel" : "Facebook",
+          "username" : "Peepmyeats-356588537870172",
+          "followers" : 342,
+          "likes" : 343
+        }
+      ]
+    },
+    {
+      "id" : 4,
+      "username" : "Athena",
+      "profile_picture" : "https://photos-4.dropbox.com/t/2/AAA4Tqzr6KmlvQDlOAyHqZaHmVioQ5jUUw8nXuSapFXfqg/12/665332207/png/32x32/3/1502064000/0/2/gddssathena.png/EN2R7bYFGEQgBygH/CVH9CWE1X4527oBqslj6EOJURwfmvF5tg6nX4q1Is0Y?dl=0&size=1280x960&size_mode=3",
+      "ranking" : "70/100",
+      "connections" : 8,
+      "campaigns" : 2,
+      "money_earned" : 150,
+      "channels" : [
+        {
+          "channel" : "Instagram",
+          "username" : "gddssathena",
+          "profile_picture" : "https://photos-4.dropbox.com/t/2/AAA4Tqzr6KmlvQDlOAyHqZaHmVioQ5jUUw8nXuSapFXfqg/12/665332207/png/32x32/3/1502064000/0/2/gddssathena.png/EN2R7bYFGEQgBygH/CVH9CWE1X4527oBqslj6EOJURwfmvF5tg6nX4q1Is0Y?dl=0&size=1280x960&size_mode=3",
+          "followers" : 10900,
+          "following" : 995,
+          "posts" : 3901,
+          "joined" : "2013-01-01",
+          "location" : "Queens, NY, USA"
+        }
+      ]
+    },
+    {
+      "id" : 5,
+      "username" : "cy_eats",
+      "profile_picture" : "https://photos-5.dropbox.com/t/2/AABoE48PTaF_FPO0juFsReWiejnTJIwseGdtDSQ6nlV_Vw/12/665332207/png/32x32/3/1502064000/0/2/cy_eats.png/EN2R7bYFGEQgBygH/YIB6nr0HFx-C6iq6Jy-KYVWjnGuR1hZw5pO4Mi9UJcA?dl=0&size=1280x960&size_mode=3",
+      "ranking" : "88/100",
+      "connections" : 9,
+      "campaigns" : 6,
+      "money_earned" : 450,
+      "channels" : [
+        {
+          "channel" : "Instagram",
+          "username" : "cy_eats",
+          "profile_picture" : "https://photos-5.dropbox.com/t/2/AABoE48PTaF_FPO0juFsReWiejnTJIwseGdtDSQ6nlV_Vw/12/665332207/png/32x32/3/1502064000/0/2/cy_eats.png/EN2R7bYFGEQgBygH/YIB6nr0HFx-C6iq6Jy-KYVWjnGuR1hZw5pO4Mi9UJcA?dl=0&size=1280x960&size_mode=3",
+          "followers" : 172000,
+          "following" : 638,
+          "posts" : 4029,
+          "joined" : "2012-12-01",
+          "location" : "New York, NY, USA"
+        }
+      ]
+    },
+    {
+      "id" : 6,
+      "username" : "sanjwithablog",
+      "profile_picture" : "https://photos-2.dropbox.com/t/2/AACA7-6SJU-Y1U10waNqYBv8ewzFNbUWeS2PWX1mSQYvfA/12/665332207/png/32x32/3/1502067600/0/2/sanjwithablog.png/EN2R7bYFGEQgBygH/Opa_J_sbOm5wqVHHu4DJbtME4OrKfXwU-4XXp2WWHMc?dl=0&size=1280x960&size_mode=3",
+      "ranking" : "60/100",
+      "connections" : 7,
+      "campaigns" : 3,
+      "money_earned" : 250,
+      "channels" : [
+        {
+          "channel" : "Instagram",
+          "username" : "sanjwithablog",
+          "profile_picture" : "https://photos-2.dropbox.com/t/2/AACA7-6SJU-Y1U10waNqYBv8ewzFNbUWeS2PWX1mSQYvfA/12/665332207/png/32x32/3/1502067600/0/2/sanjwithablog.png/EN2R7bYFGEQgBygH/Opa_J_sbOm5wqVHHu4DJbtME4OrKfXwU-4XXp2WWHMc?dl=0&size=1280x960&size_mode=3",
+          "followers" : 2662,
+          "following" : 1020,
+          "posts" : 191,
+          "joined" : "2014-02-01",
+          "location" : "New York, NY, USA"
+        }
+      ]
+    },
+    {
+      "id" : 7,
+      "username" : "evapiggie",
+      "profile_picture" : "https://photos-3.dropbox.com/t/2/AADhC84nbS0CDNGzgMKrJqL80dP0jOkvDZef68bX14_f1w/12/665332207/png/32x32/3/1502067600/0/2/evapiggie.png/EN2R7bYFGEQgBygH/pCe_z_PN2dDvmv6mtzVlIbToTzRsLjgqNY47x-TxhQU?dl=0&size=1280x960&size_mode=3",
+      "ranking" : "63/100",
+      "connections" : 9,
+      "campaigns" : 4,
+      "money_earned" : 350,
+      "channels" : [
+        {
+          "channel" : "Instagram",
+          "username" : "evapiggie",
+          "profile_picture" : "https://photos-3.dropbox.com/t/2/AADhC84nbS0CDNGzgMKrJqL80dP0jOkvDZef68bX14_f1w/12/665332207/png/32x32/3/1502067600/0/2/evapiggie.png/EN2R7bYFGEQgBygH/pCe_z_PN2dDvmv6mtzVlIbToTzRsLjgqNY47x-TxhQU?dl=0&size=1280x960&size_mode=3",
+          "followers" : 5352,
+          "following" : 517,
+          "posts" : 895,
+          "joined" : "2011-07-01",
+          "location" : "New York, NY, USA"
         }
       ]
     }

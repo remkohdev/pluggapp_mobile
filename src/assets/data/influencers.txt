@@ -1,79 +1,41 @@
-3)
-Username: Justin
-Channels:
-IG
-Instagram_username: @peepmyeats
-facebook_username: Peepmyeats
-Profile_pictures:https://www.dropbox.com/s/047clre8olovs52/peepmyeats.png?dl=0
-Instagram_followers: 59.8k
-Instagram_following: 871
-Instagram_posts:3,791
-Instagram_joined: 2013 Oct
-Instagram_location:New York, NY, USA
-Plug’d_ranking: 75/100
-Plug’d_connections: 15
-Plug’d_campaign: 3
-Plug’d_money_earned: $300
+{
+  "id" : ,
+  "username" : "",
+  "profile_picture" : "",
+  "ranking" : "/100",
+  "connections" : ,
+  "campaigns" : ,
+  "money_earned" : ,
+  "channels" : [
+    {
+      "channel" : "Instagram",
+      "username" : "",
+      "profile_picture" : "",
+      "followers" : ,
+      "following" : ,
+      "posts" : ,
+      "joined" : "",
+      "location" : "New York, NY, USA"
+    },
+    {
+      "channel" : "Twitter",
+      "username" : "",
+      "followers" : ,
+      "following" : ,
+      "tweets" : ,
+      "joined" : "",
+      "location" : ""
+    },
+    {
+      "channel" : "Facebook",
+      "username" : "",
+      "followers" : ,
+      "likes" :
+    }
+  ]
+}
 
-4)
-Username: Athena
-Channels:
-IG
-Instagram_username: @gddssathena
-Profile_pictures:https://www.dropbox.com/s/q2gob8nze9ha7r3/gddssathena.png?dl=0
-Instagram_followers:10.9k
-Instagram_following: 995
-Instagram_posts:3,901
-Instagram_joined:2013 Jan
-Instagram_location: Queens, NY, USA
-Plug’d_ranking:70/100
-Plug’d_connections:8
-Plug’d_campaign:2
-Plug’d_money_earned:$150
 
-5)
-Username: cy_eats
-Channels:
-IG
-Instagram_username: @cy_eats
-Profile_pictures:https://www.dropbox.com/s/6jxzirlgx1lmzc8/cy_eats.png?dl=0
-Instagram_followers: 172k
-Instagram_following: 638
-Instagram_posts: 4,029
-Instagram_joined: 2012 Dec
-Instagram_location:New York, NY, USA
-Plug’d_ranking: 88/100
-Plug’d_connections: 9
-Plug’d_campaign:6
-Plug’d_money_earned:$450
-
-6)
-Username: sanjwithablog
-Channels:
-IG
-Instagram_username: @sanjwithablog
-Profile_picture:https://www.dropbox.com/s/q170d29f33p75hs/sanjwithablog.png?dl=0
-Instagram_followers: 2,662
-Instagram_following: 1,020
-Instagram_posts: 191
-Instagram_joined: 2014 Feb
-Instagram_location:New York, NY, USA
-Plug’d_ranking: 60/100
-Plug’d_connections: 7
-Plug’d_campaign:3
-Plug’d_money_earned:$250
-
-7)
-Username: evapiggie
-Channels:
-IG
-Instagram_username: @evapiggie
-Profile_pictures:https://www.dropbox.com/s/uratiumigjykmzv/evapiggie.png?dl=0
-Instagram_followers: 5,352
-Instagram_following: 517
-Instagram_posts: 895
-Instagram_joined: 2011 July
-Instagram_location:New York, NY, USA
 Plug’d_ranking: 63/100
 Plug’d_connections: 9
 Plug’d_campaign: 4

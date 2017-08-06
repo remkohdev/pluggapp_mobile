@@ -7,10 +7,16 @@
 <ion-content padding>
 
 	<p (click)="logout()">logout</p>
-	<h2>Welcome to Plugg!</h2>
-  <h3>Promotions</h3>
-  <p>
-    {{promotion.title\}}
-  </p>
+	<h2>{{ title }}</h2>
+  <ion-list>
+    <ion-item *ngFor="let influencer of influencers.influencers"
+            (click)="itemSelected(influencer)">
+        <!--OR <ion-thumbnail item-start> -->
+        <ion-avatar item-start>
+          <img src="{{ influencer.profile_picture }}">
+        </ion-avatar>
+        {{ influencer.username }}
+    </ion-item>
+  </ion-list>
 
 </ion-content>

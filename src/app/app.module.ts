@@ -15,6 +15,7 @@ import { SplashScreen } from '@ionic-native/splash-screen';
 import { CloudSettings, CloudModule } from '@ionic/cloud-angular';
 import { AuthServiceProvider } from '../providers/auth-service/auth-service';
 import { HttpModule } from '@angular/http';
+import { DataService } from '../providers/data/data-service';
 
 const cloudSettings: CloudSettings = {
   'core': {
@@ -62,7 +63,8 @@ const cloudSettings: CloudSettings = {
     StatusBar,
     SplashScreen,
     {provide: ErrorHandler, useClass: IonicErrorHandler},
-    AuthServiceProvider
+    AuthServiceProvider,
+    DataService
   ]
 })
 export class AppModule {}
