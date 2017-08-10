@@ -1,6 +1,19 @@
-# PlugApp Mobile
+# About
 
-## Requirements
+# Release Logs
+
+## 0.1.0
+Date: 2017-08-10
+Description: First prototype release.
+
+* Authentication using Ionic Cloud Auth service with email/password,
+* Instagram Auth,
+* Ionic Cloud Push notifications for Android,
+* List an Detail pages for MyPlugs, Influencers, Businesses, and Campaigns and a placeholder page for Notifications.
+
+# Installation
+
+## Pre-Requirements
 
 This is a 'tabs' starter template for [Ionic](http://ionicframework.com/docs/) projects.
 
@@ -8,12 +21,29 @@ This is a 'tabs' starter template for [Ionic](http://ionicframework.com/docs/) p
 * Apache Cordova
 * Ionic
 
-## Run
+## Download
 
 ```bash
 $ git clone https://github.com/remkohdev/pluggapp_mobile.git
 $ cd pluggapp_mobile
+```
+
+## Run
+
+### Web Browser
+
+Push notifications will not work in a Web Browser as these require native functionality.
+
+```bash
 $ ionic serve
+```
+
+### Android
+
+You must have an Android emulator configured and added the platform to the ionic cordova installation.
+
+```bash
+$ ionic serve emulate android
 ```
 
 ## Build
@@ -35,27 +65,10 @@ You can manage Ionic apps that are linked to the Ionic Cloud service in the [Ion
 ionic cordova plugin add phonegap-plugin-push --variable SENDER_ID=86595768696 --save
 npm install --save @ionic-native/push
 ```
-5. Use the generator to create an AuthService,
-```bash
-$ ionic generate provider AuthService
-```
-to create a new provider in the ''~/src/providers' directory
 
-## To be done:
+# Author
 
-* Add [Angular Testing](https://angular.io/guide/testing) framework to Ionic2 app:
-  * [Jasmine](https://jasmine.github.io) for basic tests
-  * [Karma](https://karma-runner.github.io) for writing and running unit tests
-  * [Protractor](http://www.protractortest.org/) for e2e user experience tests
-  * Optional: Appium, Selenium, Mocha, Istanbul Code coverage, et al
-* Use separate Ionic Modals for both Signup as Login.
-* Add Signup/Login Options
-  1. Add Facebook Signup/Login
-  2. Add Instagram Signup/Login
-  3. Add Twitter Signup/Login
-  4. Add Loopback.io Signup/Login
-* Add IBM MobileFirst Authentication
-* Add IBM MobileFirst Push Notifications
-* Try Google Firebase services
-* Try AWS mobile services
-* Try Azure mobile services
+Remko de Knikker (@remkohdev, remkohdev@gmail.com)
+https://github.com/remkohdev/
+
+# License
