@@ -182,6 +182,93 @@
           "location" : "New York, NY, USA"
         }
       ]
+    },
+    {
+      "id" : 8,
+      "username" : "Miichelle Svendsen",
+      "profile_picture" : "https://photos-6.dropbox.com/t/2/AABkoTUGX4bbU_zas-hPWpmXY0rhp-89c0NiTewe3ysSZg/12/665332207/png/32x32/3/1502319600/0/2/Michelle%20Svendsen.png/EN2R7bYFGEQgBygH/A4cwPm9JxJU_Bb5D1oQs4LApPKD7zqVwtacKTKFRzvU?dl=0&size=2048x1536&size_mode=3",
+      "ranking" : "88/100",
+      "connections" : 19,
+      "campaigns" : 10,
+      "money_earned" : 800,
+      "channels" : [
+        {
+          "channel" : "Instagram",
+          "username" : "miichellesvendsen",
+          "profile_picture" : "https://photos-6.dropbox.com/t/2/AABkoTUGX4bbU_zas-hPWpmXY0rhp-89c0NiTewe3ysSZg/12/665332207/png/32x32/3/1502319600/0/2/Michelle%20Svendsen.png/EN2R7bYFGEQgBygH/A4cwPm9JxJU_Bb5D1oQs4LApPKD7zqVwtacKTKFRzvU?dl=0&size=2048x1536&size_mode=3",
+          "followers" : 156000,
+          "following" : 575,
+          "posts" : 593,
+          "joined" : "2012-06-01",
+          "location" : "New York, NY, USA"
+        },
+        {
+          "channel" : "Facebook",
+          "username" : "Miichellesvendsen",
+          "profile_picture" : "https://scontent-lga3-1.xx.fbcdn.net/v/t1.0-9/12993526_1735038536777762_799812365791161958_n.jpg?oh=7aa50c073b028f5746813fef9a2875a4&oe=5A299577",
+          "followers" : 14773
+        }
+      ]
+    },
+    {
+      "id" : 9,
+      "username" : "lettucedine",
+      "profile_picture" : "https://photos-5.dropbox.com/t/2/AAD9cRcLRWzov-H_vn17loTRvBQmVJHUEKu7U5T8guJyqA/12/665332207/png/32x32/3/1502319600/0/2/Lettucedine.png/EN2R7bYFGEQgBygH/sZUriT5wy74xEc5lAMYfUC-2Nz-_Sb4mnya6fkjVnJM?dl=0&size=2048x1536&size_mode=3",
+      "ranking" : "83/100",
+      "connections" : 13,
+      "campaigns" : 7,
+      "money_earned" : 450,
+      "channels" : [
+        {
+          "channel" : "Instagram",
+          "username" : "lettucedine",
+          "profile_picture" : "https://photos-5.dropbox.com/t/2/AAD9cRcLRWzov-H_vn17loTRvBQmVJHUEKu7U5T8guJyqA/12/665332207/png/32x32/3/1502319600/0/2/Lettucedine.png/EN2R7bYFGEQgBygH/sZUriT5wy74xEc5lAMYfUC-2Nz-_Sb4mnya6fkjVnJM?dl=0&size=2048x1536&size_mode=3",
+          "followers" : 120000,
+          "following" : 70,
+          "posts" : 2085,
+          "joined" : "2011-03-01",
+          "location" : "New York, NY, USA"
+        },
+        {
+          "channel" : "Facebook",
+          "username" : "lettucedine",
+          "followers" : 329,
+          "likes" : 333
+        }
+      ]
+    },
+    {
+      "id" : 10,
+      "username" : "Jessica",
+      "profile_picture" : "https://photos-2.dropbox.com/t/2/AAAbPDXTZaA_xRuZBrG1BzbJZz9LFjz-OOZ6uYkpcrEk8w/12/665332207/png/32x32/3/1502319600/0/2/cheatdayeats.png/EN2R7bYFGEQgBygH/Zk1iCAcDYIcrd9Lr7BE2cZYLQHa4Q99B7NBOkWt4Pbg?dl=0&size=2048x1536&size_mode=3",
+      "ranking" : "92/100",
+      "connections" : 17,
+      "campaigns" : 9,
+      "money_earned" : 750,
+      "channels" : [
+        {
+          "channel" : "Instagram",
+          "username" : "cheatdayeats",
+          "profile_picture" : "https://photos-2.dropbox.com/t/2/AAAbPDXTZaA_xRuZBrG1BzbJZz9LFjz-OOZ6uYkpcrEk8w/12/665332207/png/32x32/3/1502319600/0/2/cheatdayeats.png/EN2R7bYFGEQgBygH/Zk1iCAcDYIcrd9Lr7BE2cZYLQHa4Q99B7NBOkWt4Pbg?dl=0&size=2048x1536&size_mode=3",
+          "followers" : 354000,
+          "following" : 758,
+          "posts" : 3094,
+          "joined" : "2010-04-01",
+          "location" : "New York, NY, USA"
+        },
+        {
+          "channel" : "Twitter",
+          "username" : "cheatdayeats",
+          "followers" : 557,
+          "following" : 328
+        },
+        {
+          "channel" : "Facebook",
+          "username" : "cheatdayeats",
+          "followers" : 3598,
+          "likes" : 3557
+        }
+      ]
     }
   ]
 }

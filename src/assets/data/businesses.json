@@ -1,0 +1,126 @@
+{
+  "businesses": [
+    {
+      "id" : 1,
+      "username" : "Anthony & Son Panini Shoppe",
+      "profile_picture" : "https://photos-3.dropbox.com/t/2/AABXscd3H0j3riuv7ZqCT6HejFMD7BL5Z_xmBw2J41GoYw/12/665332207/png/32x32/3/1502323200/0/2/Panini%20Shoppe.png/EN2R7bYFGEQgBygH/RTj4voKxXEDpom2RVZKbFYn9H7Bo9ebr3K_R1cC2tD0?dl=0&size=2048x1536&size_mode=3",
+      "ranking" : "80/100",
+      "connections" : 7,
+      "campaigns" : 3,
+      "money_paid" : 160,
+      "channels" : [
+        {
+          "channel" : "Instagram",
+          "username" : "paninishoppe",
+          "profile_picture" : "https://photos-3.dropbox.com/t/2/AABXscd3H0j3riuv7ZqCT6HejFMD7BL5Z_xmBw2J41GoYw/12/665332207/png/32x32/3/1502323200/0/2/Panini%20Shoppe.png/EN2R7bYFGEQgBygH/RTj4voKxXEDpom2RVZKbFYn9H7Bo9ebr3K_R1cC2tD0?dl=0&size=2048x1536&size_mode=3",
+          "followers" : 29500,
+          "following" : 696,
+          "posts" : 559,
+          "joined" : "2010-10-01",
+          "location" : "Brooklyn, NY, USA"
+        },
+        {
+          "channel" : "Facebook",
+          "username" : "anthonysonpaninishoppe",
+          "followers" : 1364,
+          "likes" : 1961
+        }
+      ]
+    },
+    {
+      "id" : 2,
+      "username" : "Gyro World",
+      "profile_picture" : "https://photos-3.dropbox.com/t/2/AABkxSQiFmOLzJGqERCp1tBWimzZks_wYeUru6KGFkS2LQ/12/665332207/png/32x32/3/1502326800/0/2/Gyro%20World.png/EN2R7bYFGEQgBygH/W5kZVyiUqsKWxELOiMVQ3a14mYLODYBAYpgIYmrmZqw?dl=0&size=2048x1536&size_mode=3",
+      "ranking" : "73/100",
+      "connections" : 5,
+      "campaigns" : 2,
+      "money_paid" : 715,
+      "channels" : [
+        {
+          "channel" : "Instagram",
+          "username" : "gyroworld",
+          "profile_picture" : "https://photos-3.dropbox.com/t/2/AABkxSQiFmOLzJGqERCp1tBWimzZks_wYeUru6KGFkS2LQ/12/665332207/png/32x32/3/1502326800/0/2/Gyro%20World.png/EN2R7bYFGEQgBygH/W5kZVyiUqsKWxELOiMVQ3a14mYLODYBAYpgIYmrmZqw?dl=0&size=2048x1536&size_mode=3",
+          "followers" : 9274,
+          "following" : 159,
+          "posts" : 151,
+          "joined" : "2011-09-01",
+          "location" : "Queens, NY, USA"
+        },
+        {
+          "channel" : "Facebook",
+          "username" : "gyroworld",
+          "likes" : 4353
+        }
+      ]
+    },
+    {
+      "id" : 3,
+      "username" : "La Bella Mariella Pizzeria",
+      "profile_picture" : "https://photos-4.dropbox.com/t/2/AAD_pfMWcMZMZZyD-I3ZUS0iSMqZBd0rdFlsOlR5BRehRw/12/665332207/png/32x32/3/1502326800/0/2/La%20Bella%20Mariella.png/EN2R7bYFGEQgBygH/34JMSGq5l1LKuDHeqbfDxHLu3hMQHPd_LK-IdDeETLw?dl=0&size=2048x1536&size_mode=3",
+      "ranking" : "60/100",
+      "connections" : 13,
+      "campaigns" : 6,
+      "money_paid" : 2600,
+      "channels" : [
+        {
+          "channel" : "Instagram",
+          "username" : "la_bella_mariella_fresh_pond",
+          "profile_picture" : "https://photos-4.dropbox.com/t/2/AAD_pfMWcMZMZZyD-I3ZUS0iSMqZBd0rdFlsOlR5BRehRw/12/665332207/png/32x32/3/1502326800/0/2/La%20Bella%20Mariella.png/EN2R7bYFGEQgBygH/34JMSGq5l1LKuDHeqbfDxHLu3hMQHPd_LK-IdDeETLw?dl=0&size=2048x1536&size_mode=3",
+          "followers" : 1020,
+          "following" : 4450,
+          "posts" : 173,
+          "joined" : "2016-04-01",
+          "location" : "Queens, NY, USA"
+        }
+      ]
+    },
+    {
+      "id" : 4,
+      "username" : "Moonstruck Diner",
+      "profile_picture" : "https://photos-1.dropbox.com/t/2/AABSvLRTXRbV6RWvymxz70Q2DwzrWrZaKuctpka8QkIBdA/12/665332207/png/32x32/3/1502326800/0/2/Moonstruck.png/EN2R7bYFGEQgBygH/gvIUqt_b2gW9Zdzypfm8ntEFvLrMr_Eu6SipPLYs_oI?dl=0&size=2048x1536&size_mode=3",
+      "ranking" : "65/100",
+      "connections" : 8,
+      "campaigns" : 1,
+      "money_paid" : 215,
+      "channels" : [
+        {
+          "channel" : "Instagram",
+          "username" : "moonstruckeatery",
+          "profile_picture" : "https://photos-1.dropbox.com/t/2/AABSvLRTXRbV6RWvymxz70Q2DwzrWrZaKuctpka8QkIBdA/12/665332207/png/32x32/3/1502326800/0/2/Moonstruck.png/EN2R7bYFGEQgBygH/gvIUqt_b2gW9Zdzypfm8ntEFvLrMr_Eu6SipPLYs_oI?dl=0&size=2048x1536&size_mode=3",
+          "followers" : 4513,
+          "following" : 353,
+          "posts" : 66,
+          "joined" : "2015-12-01",
+          "location" : "New York, NY, USA"
+        },
+        {
+          "channel" : "Facebook",
+          "username" : "moonstruckeatery58",
+          "followers" : 229,
+          "likes" : 232
+        }
+      ]
+    },
+    {
+      "id" : 5,
+      "username" : "Lusso Supply",
+      "profile_picture" : "https://photos-6.dropbox.com/t/2/AABqTX1Mv_wguKUzKGTX8cnrgb5tfK08F_qzcJ3OvlRg4Q/12/665332207/png/32x32/3/1502326800/0/2/Lusso%20Supply.png/EN2R7bYFGEQgBygH/r2fEvfTsEW5rzW16vIi18diCygTsmqOuISyckYSYing?dl=0&size=2048x1536&size_mode=3",
+      "ranking" : "70/100",
+      "connections" : 15,
+      "campaigns" : 4,
+      "money_paid" : 1650,
+      "channels" : [
+        {
+          "channel" : "Instagram",
+          "username" : "lussosupply",
+          "profile_picture" : "https://photos-6.dropbox.com/t/2/AABqTX1Mv_wguKUzKGTX8cnrgb5tfK08F_qzcJ3OvlRg4Q/12/665332207/png/32x32/3/1502326800/0/2/Lusso%20Supply.png/EN2R7bYFGEQgBygH/r2fEvfTsEW5rzW16vIi18diCygTsmqOuISyckYSYing?dl=0&size=2048x1536&size_mode=3",
+          "followers" : 13000,
+          "following" : 7213,
+          "posts" : 577,
+          "joined" : "2013-07-01",
+          "location" : "NY, CI, MIA, TO, LA"
+        }
+      ]
+    }
+  ]
+}

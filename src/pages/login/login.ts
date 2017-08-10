@@ -3,7 +3,7 @@ import { NavController, AlertController, LoadingController } from 'ionic-angular
 import { User, UserDetails, AuthModuleId, Push, PushToken  } from '@ionic/cloud-angular';
 import { TabsPage } from '../tabs/tabs';
 
-import { AuthServiceProvider } from '../../providers/auth-service/auth-service';
+import { AuthServiceProvider } from '../../providers/auth/auth-service';
 
 
 @Component({

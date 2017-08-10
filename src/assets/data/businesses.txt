@@ -1,0 +1,228 @@
+Businesses:
+{
+  "id" : ,
+  "username" : "",
+  "profile_picture" : "",
+  "ranking" : "/100",
+  "connections" : ,
+  "campaigns" : ,
+  "money_paid" : ,
+  "channels" : [
+    {
+      "channel" : "Instagram",
+      "username" : "",
+      "profile_picture" : "",
+      "followers" : ,
+      "following" : ,
+      "posts" : ,
+      "joined" : "-01",
+      "location" : "Brooklyn, NY, USA"
+    },
+    {
+      "channel" : "Facebook",
+      "username" : "",
+      "followers" : ,
+      "likes" :
+    }
+  ]
+}
+
+6)
+Username: Phillies Pizzeria
+Channels:
+IG
+Instagram_username: @philliespizzeria
+Profile_pictures:https://www.dropbox.com/s/5g5ivwxmdwqncp5/Phillies%20Pizzeria.png?dl=0
+Instagram_followers: 2,746
+Instagram_following: 2,691
+Instagram_posts: 216
+Instagram_joined: 2012 Nov
+Instagram_location: Queens, New York, USA
+Plug’d_ranking:65/100
+Plug’d_connections: 12
+Plug’d_campaign:4
+Followers_gained_from_plug’d_campaigns: 1,025
+
+7)
+Username: Carmines Pizzeria
+Channels:
+IG
+Instagram_username: @carminespizzeria
+Profile_pictures: https://www.dropbox.com/s/htf5zgmbfveaknb/Carmines%20Pizzeria.png?dl=0
+Instagram_followers: 1,265
+Instagram_following: 951
+Instagram_posts: 232
+Instagram_joined:2015 Feb
+Instagram_location: Brooklyn, New York, USA
+Plug’d_ranking: 60/100
+Plug’d_connections: 5
+Plug’d_campaign:2
+followers_gained_from_plug’d_campaigns:415
+
+8)
+Username: La Nonna Ristorante
+Channels:
+IG
+Instagram_username: @lanonnaonkent
+Profile_pictures:https://www.dropbox.com/s/iwibv6wn6jvchvp/La%20Nonna%20Ristorante.png?dl=0
+Instagram_followers: 868
+Instagram_following: 1,501
+Instagram_posts: 1,355
+Instagram_joined: 2015 Aug
+Instagram_location: Brooklyn, New York, USA
+Plug’d_ranking:50/100
+Plug’d_connections:6
+Plug’d_campaign: 2
+Followers_gained_from_plug’d_campaigns: 350
+
+9)
+Username: Barosa Restaurant
+Channels:
+IG
+FB
+Instagram_username: @barosa_restaurant
+facebook_username: @barosas
+Profile_pictures:https://www.dropbox.com/s/1x91st58xxfygr3/Barosa.png?dl=0
+Instagram_followers: 2,316
+Instagram_following: 5,008
+Instagram_posts: 296
+Instagram_joined: 2011 May
+Instagram_location: Queens, New York, USA
+Facebook_followers: 4,322
+Facebook_likes: 4,407
+Plug’d_ranking: 60/100
+Plug’d_connections: 10
+Plug’d_campaign:4
+Followers_gained_from_plug’d_campaigns: 750
+
+10)
+Username: Rosas Pizza
+Channels:
+IG
+FB
+Instagram_username: @rosas.pizza
+facebook_username: n/a (unofficial account - publicly created)
+Profile_pictures:https://www.dropbox.com/s/ff6cqh9j0ymcn4a/Rosas%20Pizzeria.png?dl=0
+Instagram_followers: 3,151
+Instagram_following: 3,044
+Instagram_posts: 158
+Instagram_joined: 2014 Apr
+Instagram_location: Queens, New York, USA
+Facebook_followers: n/a?
+Facebook_likes: 1,344
+Plug’d_ranking: 60/100
+Plug’d_connections: 8
+Plug’d_campaign: 3
+Followers_gained_from_plug’d_campaigns: 550
+
+11)
+Username: Energy Fuel
+Channels:
+IG
+Instagram_username: @energyfuelridgewood
+Profile_pictures:https://www.dropbox.com/s/08yptnvyi678yjm/Energy%20Fuel.png?dl=0
+Instagram_followers: 1,230
+Instagram_following: 1,468
+Instagram_posts: 216
+Instagram_joined:2011 Mar
+Instagram_location: Queens, New York, USA
+Plug’d_ranking: 50/100
+Plug’d_connections: 8
+Plug’d_campaign:2
+followers_gained_from_plug’d_campaigns:350
+
+12)
+Username: Maiella
+Channels:
+IG
+FB
+Instagram_username: @maiella_lic
+facebook_username: @maiellany
+Profile_pictures:https://www.dropbox.com/s/81bkzipfrbnynkq/Maiella%20LIC.png?dl=0
+Instagram_followers: 2,635
+Instagram_following: 435
+Instagram_posts: 306
+Instagram_joined: 2015 Jan
+Instagram_location: Queens, New York, USA
+Facebook_followers: 7,500
+Facebook_likes: 8,449
+Plug’d_ranking: 60/100
+Plug’d_connections: 6
+Plug’d_campaign: 2
+Followers_gained_from_plug’d_campaigns: 450
+
+13)
+Username: Oro
+Channels:
+IG
+FB
+Instagram_username: @oro_lic
+facebook_username: @orolic
+Profile_pictures:https://www.dropbox.com/s/bmyza1puorao00m/Oro%20LIC.png?dl=0
+Instagram_followers: 989
+Instagram_following: 2,972
+Instagram_posts: 65
+Instagram_joined: 2016 Jan
+Instagram_location: Queens, New York, USA
+Facebook_followers: 450
+Facebook_likes: 442
+Plug’d_ranking: 55/100
+Plug’d_connections: 3
+Plug’d_campaign:1
+Followers_gained_from_plug’d_campaigns: 240
+
+14)
+Username: Flo Lounge & Restaurant
+Channels:
+IG
+FB
+Instagram_username: @floloungerestaurant
+facebook_username: @florestaurant
+Profile_pictures: https://www.dropbox.com/s/nmxuyat4bcpamgv/Flo%20Lounge%20%26%20Restaurant%20.png?dl=0
+Instagram_followers: 7,647
+Instagram_following: 5,199
+Instagram_posts: 114
+Instagram_joined: 2012 Dec
+Instagram_location: Queens, New York, USA
+Facebook_followers: 27,428
+Facebook_likes: 27,609
+Plug’d_ranking: 65/100
+Plug’d_connections: 11
+Plug’d_campaign: 4
+Followers_gained_from_plug’d_campaigns: 750
+
+15)
+Username: Buon NYC
+Channels:
+IG
+FB
+Instagram_username: @buonnyc
+facebook_username: @buonnyc
+Profile_pictures: https://www.dropbox.com/s/5johrovgmh405za/Buon%20NYC.png?dl=0
+Instagram_followers: 1,787
+Instagram_following: 1,456
+Instagram_posts: 223
+Instagram_joined: 2013 Feb
+Instagram_location: Queens, New York, USA
+Facebook_followers: 376
+Facebook_likes: 377
+Plug’d_ranking: 60/100
+Plug’d_connections: 13
+Plug’d_campaign: 2
+Followers_gained_from_plug’d_campaigns: 340
+
+16)
+Username: Kissnmakeup
+Channels:
+IG
+Instagram_username: @kissnmakeupbynicole
+Profile_pictures:https://www.dropbox.com/s/q8ciq6ak12wgmw6/KissnMakeup.png?dl=0
+Instagram_followers: 376
+Instagram_following: 338
+Instagram_posts: 67
+Instagram_joined: 2017 May
+Instagram_location: Brooklyn, New York, USA
+Plug’d_ranking:50/100
+Plug’d_connections:1
+Plug’d_campaign:1
+Followers_gained_from_plug’d_campaigns: 376

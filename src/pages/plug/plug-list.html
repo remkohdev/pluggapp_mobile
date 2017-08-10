@@ -1,0 +1,31 @@
+<!--
+  Generated template for the PlugListPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+  <ion-navbar>
+    <ion-title>Plug'd</ion-title>
+    <ion-buttons right>
+      <button ion-button icon-only (click)="openModal()">
+        <ion-icon name="menu"></ion-icon>
+      </button>
+    </ion-buttons>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+  <h2>My Plugs</h2>
+  <ion-list>
+    <ion-item *ngFor="let plug of plugs.plugs"
+            (click)="itemSelected(plug)">
+        <h3>{{ plug.name }}</h3>
+        <p><i>(Period: {{ plug.startdate }} to {{ plug.enddate }})</i></p>
+        <p><b>{{ plug.campaign_slogan }}</b></p>
+        <p>Influencer: {{ plug.influencer_id }}</p>
+        <p>Business: {{ plug.business_id }}</p>
+        <p>Value: ${{ plug.amount }}</p>
+    </ion-item>
+  </ion-list>
+</ion-content>
