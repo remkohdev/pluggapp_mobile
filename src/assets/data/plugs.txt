@@ -1,0 +1,107 @@
+Campaigns:
+NOTES:
+startdate > plug_date
+enddate > startdate
+campaign_details must be structured:
+- plug_details : {
+  posts : [
+    {
+      id: 1,
+      publicationdate: "2017-07-01",
+      publicationtime: "",
+    },
+    {
+      id: 2,
+      publicationdate: "2017-07-03"
+    }
+  ]
+}
+
+{
+  "id" : ,
+  "name" : "",
+  "influencer_id" : ,
+  "influencer_username" : "",
+  "business_id" : ,
+  "business_name" : "",
+  "campaign_details" : "",
+  "campaign_slogan" : "",
+  "campaign_picture" : "",
+  "plug_date" : "",
+  "startdate" : "",
+  "enddate" : "",
+  "amount" : 0,
+  "platform" : "Instagram"
+}
+
+4)
+Influencer_Username: Brooklyn Tank
+Business_Username: Lusso Supply
+Campaign_Details: 1 post(s) over 1 weeks
+Contract_Signed: 21 Jan
+Start_Date: 21 Jan
+End_Date: 21 Jan
+Agreed_Amount: $200
+Agreed_Platform: IG
+
+5)
+Influencer_Username: Dara
+Business_Username: La Bella Mariella Pizzeria
+Campaign_Details: 5 posts over 5 weeks
+Contract_Signed: 8 May
+Start_Date: 8 May
+End_Date: 12 June
+Agreed_Amount: $500
+Agreed_Platform: IG & FB
+
+6)
+Influencer_Username: Eva Piggie
+Business_Username: La Nonna Ristorante
+Campaign_Details: 5 posts over 5 weeks
+Contract_Signed: 24 May
+Start_Date: 29 May
+End_Date: 3 July
+Agreed_Amount: $500
+Agreed_Platform: IG
+
+7)
+Influencer_Username: Cheatdayeats
+Business_Username: Maiella
+Campaign_Details: 10 posts over 8 weeks
+Contract_Signed: 15 July
+Start_Date: 21 July
+End_Date: 15 Sept
+Agreed_Amount: $750
+Agreed_Platform: IG
+
+
+
+8)
+Influencer_Username: Hungry Twins
+Business_Username: Flo Restaurant
+Campaign_Details: 15 posts over 10 weeks
+Contract_Signed: 1 March
+Start_Date: 6 March
+End_Date: 8 May
+Agreed_Amount: $1,500
+Agreed_Platform: IG
+
+9)
+Influencer_Username: Sanjwithablog
+Business_Username: Barosa Restaurant
+Campaign_Details: 1 post 1 week
+Contract_Signed: 5 May
+Start_Date: 8 May
+End_Date: 12 May
+Agreed_Amount: $100
+Agreed_Platform: IG
+
+10)
+Influencer_Username: Brooklyn Tank
+Business_Username: Energy Fuel
+Campaign_Details: 3 posts over 7 weeks
+Contract_Signed: 23 June
+Start_Date: 26 June
+End_Date: 17 July
+Agreed_Amount: $500
+Agreed_Platform: IG

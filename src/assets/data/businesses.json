@@ -2,7 +2,7 @@
   "businesses": [
     {
       "id" : 1,
-      "username" : "Anthony & Son Panini Shoppe",
+      "name" : "Anthony & Son Panini Shoppe",
       "profile_picture" : "https://photos-3.dropbox.com/t/2/AABXscd3H0j3riuv7ZqCT6HejFMD7BL5Z_xmBw2J41GoYw/12/665332207/png/32x32/3/1502323200/0/2/Panini%20Shoppe.png/EN2R7bYFGEQgBygH/RTj4voKxXEDpom2RVZKbFYn9H7Bo9ebr3K_R1cC2tD0?dl=0&size=2048x1536&size_mode=3",
       "ranking" : "80/100",
       "connections" : 7,
@@ -29,7 +29,7 @@
     },
     {
       "id" : 2,
-      "username" : "Gyro World",
+      "name" : "Gyro World",
       "profile_picture" : "https://photos-3.dropbox.com/t/2/AABkxSQiFmOLzJGqERCp1tBWimzZks_wYeUru6KGFkS2LQ/12/665332207/png/32x32/3/1502326800/0/2/Gyro%20World.png/EN2R7bYFGEQgBygH/W5kZVyiUqsKWxELOiMVQ3a14mYLODYBAYpgIYmrmZqw?dl=0&size=2048x1536&size_mode=3",
       "ranking" : "73/100",
       "connections" : 5,
@@ -55,7 +55,7 @@
     },
     {
       "id" : 3,
-      "username" : "La Bella Mariella Pizzeria",
+      "name" : "La Bella Mariella Pizzeria",
       "profile_picture" : "https://photos-4.dropbox.com/t/2/AAD_pfMWcMZMZZyD-I3ZUS0iSMqZBd0rdFlsOlR5BRehRw/12/665332207/png/32x32/3/1502326800/0/2/La%20Bella%20Mariella.png/EN2R7bYFGEQgBygH/34JMSGq5l1LKuDHeqbfDxHLu3hMQHPd_LK-IdDeETLw?dl=0&size=2048x1536&size_mode=3",
       "ranking" : "60/100",
       "connections" : 13,
@@ -76,7 +76,7 @@
     },
     {
       "id" : 4,
-      "username" : "Moonstruck Diner",
+      "name" : "Moonstruck Diner",
       "profile_picture" : "https://photos-1.dropbox.com/t/2/AABSvLRTXRbV6RWvymxz70Q2DwzrWrZaKuctpka8QkIBdA/12/665332207/png/32x32/3/1502326800/0/2/Moonstruck.png/EN2R7bYFGEQgBygH/gvIUqt_b2gW9Zdzypfm8ntEFvLrMr_Eu6SipPLYs_oI?dl=0&size=2048x1536&size_mode=3",
       "ranking" : "65/100",
       "connections" : 8,
@@ -103,7 +103,7 @@
     },
     {
       "id" : 5,
-      "username" : "Lusso Supply",
+      "name" : "Lusso Supply",
       "profile_picture" : "https://photos-6.dropbox.com/t/2/AABqTX1Mv_wguKUzKGTX8cnrgb5tfK08F_qzcJ3OvlRg4Q/12/665332207/png/32x32/3/1502326800/0/2/Lusso%20Supply.png/EN2R7bYFGEQgBygH/r2fEvfTsEW5rzW16vIi18diCygTsmqOuISyckYSYing?dl=0&size=2048x1536&size_mode=3",
       "ranking" : "70/100",
       "connections" : 15,

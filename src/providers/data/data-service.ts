@@ -7,7 +7,7 @@ export class DataServiceProvider {
 
   public influencersApiHost: string = './assets/data/influencers.json';
   public businessesApiHost: string = './assets/data/businesses.json';
-  public campaignsApiHost: string = './assets/data/campaigns.json';
+  public campaignsApiHost: string = './assets/data/plugs.json';
 
   constructor(private http: Http) { }
 

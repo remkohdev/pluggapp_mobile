@@ -1,9 +1,3 @@
-<!--
-  Generated template for the PlugsPage page.
-
-  See http://ionicframework.com/docs/components/#navigation for more info on
-  Ionic pages and navigation.
--->
 <ion-header>
   <ion-navbar>
     <ion-title>Plug'd</ion-title>
@@ -17,4 +11,38 @@
 
 <ion-content padding>
   <h2>Plug Detail</h2>
+
+  <div>
+    <label for="id">id</label>
+    <input type="text" name="id" value="{{plug.id}}" [attr.disabled]="true" >
+  </div>
+  <div>
+    <label for="name">name</label>
+    <input type="text" name="name" disabled value="{{plug.name}}" [attr.disabled]="edit ? null : true" >
+  </div>
+  <div>
+    <label for="startdate">startdate</label>
+    <input type="text" name="startdate" disabled value="{{plug.startdate}}" [attr.disabled]="edit ? null : true" >
+  </div>
+  <div>
+    <label for="enddate">enddate</label>
+    <input type="text" name="enddate" disabled value="{{plug.enddate}}" [attr.disabled]="edit ? null : true" >
+  </div>
+  <div>
+    <label for="campaign_slogan">campaign_slogan</label>
+    <input type="text" name="campaign_slogan" disabled value="{{plug.campaign_slogan}}" [attr.disabled]="edit ? null : true" >
+  </div>
+  <div>
+    <label for="influencer_id">influencer_id</label>
+    <input type="text" name="influencer_id" disabled value="{{plug.influencer_id}}" [attr.disabled]="edit ? null : true" >
+  </div>
+  <div>
+    <label for="business_id">business_id</label>
+    <input type="text" name="business_id" disabled value="{{plug.business_id}}" [attr.disabled]="edit ? null : true" >
+  </div>
+  <div>
+    <label for="amount">amount</label>
+    <input type="text" name="amount" disabled value="{{plug.amount}}" [attr.disabled]="edit ? null : true" >
+  </div>
+
 </ion-content>

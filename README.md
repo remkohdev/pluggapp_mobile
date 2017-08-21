@@ -2,8 +2,17 @@
 
 # Release Logs
 
+## 0.2.0
+Date: TBD
+
+Description: First prototype, minor update #2
+
+* Enable Service Workers in Ionic2
+
+
 ## 0.1.0
 Date: 2017-08-10
+
 Description: First prototype release.
 
 * Authentication using Ionic Cloud Auth service with email/password,
@@ -13,7 +22,7 @@ Description: First prototype release.
 
 # Installation
 
-## Pre-Requirements
+## Prerequisites
 
 This is a 'tabs' starter template for [Ionic](http://ionicframework.com/docs/) projects.
 

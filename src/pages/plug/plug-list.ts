@@ -3,17 +3,14 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
 
 import { DataServiceProvider } from '../../providers/data/data-service';
 
-/**
- * Generated class for the PlugListPage page.
- *
- * See http://ionicframework.com/docs/components/#navigation for more info
- * on Ionic pages and navigation.
- */
+import { PlugDetailPage } from './plug-detail';
+
 @IonicPage()
 @Component({
   selector: 'page-plug-list',
   templateUrl: 'plug-list.html',
 })
+
 export class PlugListPage {
 
   plugs: Object = null;
@@ -29,6 +26,10 @@ export class PlugListPage {
       (error) => {
         console.log("error: "+ error);
       });
+  }
+
+  itemSelected(item) {
+    this.navCtrl.push(PlugDetailPage, { plug: item });
   }
 
   ionViewDidLoad() {

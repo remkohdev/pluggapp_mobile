@@ -1,5 +1,8 @@
 {
   "name": "pluggv1",
   "app_id": "a1e969ec",
-  "type": "ionic-angular"
+  "type": "ionic-angular",
+  "integrations": {
+    "cordova": {}
+  }
 }
