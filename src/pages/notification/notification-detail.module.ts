@@ -4,13 +4,14 @@ import { NotificationDetailPage } from './notification-detail';
 
 @NgModule({
   declarations: [
-    NotificationDetailPage,
+    NotificationDetailPage
   ],
   imports: [
-    IonicPageModule.forChild(NotificationDetailPage),
+    IonicPageModule.forChild(NotificationDetailPage)
   ],
   exports: [
     NotificationDetailPage
   ]
 })
+
 export class NotificationDetailPageModule {}

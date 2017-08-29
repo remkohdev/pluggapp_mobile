@@ -4,7 +4,7 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
 @IonicPage()
 @Component({
   selector: 'page-business-detail',
-  templateUrl: 'business-detail.html',
+  templateUrl: 'business-detail.html'
 })
 
 export class BusinessDetailPage {

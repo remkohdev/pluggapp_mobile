@@ -3,7 +3,7 @@ import { NavController, AlertController } from 'ionic-angular';
 
 import { Push } from '@ionic/cloud-angular';
 
-import { PromotionModel } from '../../../models/promotion-model';
+import { PromotionModel } from '../../models/promotion-model';
 
 @Component({
   selector: 'page-home',

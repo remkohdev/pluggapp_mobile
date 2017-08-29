@@ -4,10 +4,10 @@ import { PlugListPage } from './plug-list';
 
 @NgModule({
   declarations: [
-    PlugListPage,
+    PlugListPage
   ],
   imports: [
-    IonicPageModule.forChild(PlugListPage),
+    IonicPageModule.forChild(PlugListPage)
   ],
   exports: [
     PlugListPage

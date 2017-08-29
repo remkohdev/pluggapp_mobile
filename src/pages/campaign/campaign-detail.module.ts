@@ -4,10 +4,10 @@ import { CampaignDetailPage } from './campaign-detail';
 
 @NgModule({
   declarations: [
-    CampaignDetailPage,
+    CampaignDetailPage
   ],
   imports: [
-    IonicPageModule.forChild(CampaignDetailPage),
+    IonicPageModule.forChild(CampaignDetailPage)
   ],
   exports: [
     CampaignDetailPage

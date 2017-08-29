@@ -4,10 +4,10 @@ import { InfluencerListPage } from './influencer-list';
 
 @NgModule({
   declarations: [
-    InfluencerListPage,
+    InfluencerListPage
   ],
   imports: [
-    IonicPageModule.forChild(InfluencerListPage),
+    IonicPageModule.forChild(InfluencerListPage)
   ],
   exports: [
     InfluencerListPage

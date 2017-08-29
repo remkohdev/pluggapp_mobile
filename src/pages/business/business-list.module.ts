@@ -4,10 +4,10 @@ import { BusinessListPage } from './business-list';
 
 @NgModule({
   declarations: [
-    BusinessListPage,
+    BusinessListPage
   ],
   imports: [
-    IonicPageModule.forChild(BusinessListPage),
+    IonicPageModule.forChild(BusinessListPage)
   ],
   exports: [
     BusinessListPage

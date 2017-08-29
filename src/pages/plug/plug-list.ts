@@ -8,7 +8,7 @@ import { PlugDetailPage } from './plug-detail';
 @IonicPage()
 @Component({
   selector: 'page-plug-list',
-  templateUrl: 'plug-list.html',
+  templateUrl: 'plug-list.html'
 })
 
 export class PlugListPage {
@@ -19,6 +19,7 @@ export class PlugListPage {
               public navParams: NavParams,
               public dataService: DataServiceProvider) {
 
+      // currently plugs are read-only from file
       this.plugs = this.dataService.getCampaigns()
       .then( (plugs) => {
         this.plugs = plugs;

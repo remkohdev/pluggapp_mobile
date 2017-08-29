@@ -4,10 +4,10 @@ import { NotificationListPage } from './notification-list';
 
 @NgModule({
   declarations: [
-    NotificationListPage,
+    NotificationListPage
   ],
   imports: [
-    IonicPageModule.forChild(NotificationListPage),
+    IonicPageModule.forChild(NotificationListPage)
   ],
   exports: [
     NotificationListPage

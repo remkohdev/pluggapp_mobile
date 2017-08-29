@@ -10,7 +10,7 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
 @IonicPage()
 @Component({
   selector: 'page-notification-list',
-  templateUrl: 'notification-list.html',
+  templateUrl: 'notification-list.html'
 })
 export class NotificationListPage {
 

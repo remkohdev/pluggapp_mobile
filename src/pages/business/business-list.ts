@@ -7,7 +7,7 @@ import { BusinessDetailPage } from './business-detail';
 @IonicPage()
 @Component({
   selector: 'page-business-list',
-  templateUrl: 'business-list.html',
+  templateUrl: 'business-list.html'
 })
 
 export class BusinessListPage {

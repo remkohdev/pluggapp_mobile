@@ -4,7 +4,7 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
 @IonicPage()
 @Component({
   selector: 'page-influencer-detail',
-  templateUrl: 'influencer-detail.html',
+  templateUrl: 'influencer-detail.html'
 })
 
 export class InfluencerDetailPage {

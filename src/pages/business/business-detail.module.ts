@@ -4,10 +4,10 @@ import { BusinessDetailPage } from './business-detail';
 
 @NgModule({
   declarations: [
-    BusinessDetailPage,
+    BusinessDetailPage
   ],
   imports: [
-    IonicPageModule.forChild(BusinessDetailPage),
+    IonicPageModule.forChild(BusinessDetailPage)
   ],
   exports: [
     BusinessDetailPage

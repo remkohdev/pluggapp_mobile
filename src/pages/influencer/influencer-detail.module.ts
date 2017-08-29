@@ -4,10 +4,10 @@ import { InfluencerDetailPage } from './influencer-detail';
 
 @NgModule({
   declarations: [
-    InfluencerDetailPage,
+    InfluencerDetailPage
   ],
   imports: [
-    IonicPageModule.forChild(InfluencerDetailPage),
+    IonicPageModule.forChild(InfluencerDetailPage)
   ],
   exports: [
     InfluencerDetailPage

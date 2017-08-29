@@ -1,8 +1,15 @@
 import { NgModule, ErrorHandler } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import { HttpModule } from '@angular/http';
 import { IonicApp, IonicModule, IonicErrorHandler } from 'ionic-angular';
+//import { InMemoryWebApiModule } from 'angular2-in-memory-web-api';
+import { StatusBar } from '@ionic-native/status-bar';
+import { SplashScreen } from '@ionic-native/splash-screen';
+import { CloudSettings, CloudModule } from '@ionic/cloud-angular';
+
 import { MyApp } from './app.component';
 
+// Pages
 import { HomePage } from '../pages/home/home';
 import { AboutPage } from '../pages/about/about';
 import { ContactPage } from '../pages/contact/contact';
@@ -19,14 +26,12 @@ import { InfluencerDetailPage } from '../pages/influencer/influencer-detail';
 import { CampaignListPage } from '../pages/campaign/campaign-list';
 import { NotificationListPage } from '../pages/notification/notification-list';
 
-import { StatusBar } from '@ionic-native/status-bar';
-import { SplashScreen } from '@ionic-native/splash-screen';
-
-import { CloudSettings, CloudModule } from '@ionic/cloud-angular';
-import { HttpModule } from '@angular/http';
+//import { PlugDetailFormComponent } from '../components/plug-detail-form/plug-detail-form';
+//import { PlugModel } from '../models/plug-model';
 
 import { AuthServiceProvider } from '../providers/auth/auth-service';
 import { DataServiceProvider } from '../providers/data/data-service';
+//import { InMemoryDbServiceProvider } from '../providers/data/in-memory-db-service';
 import { GlobalServiceProvider } from '../providers/global/global-service';
 
 const cloudSettings: CloudSettings = {
@@ -69,6 +74,7 @@ const cloudSettings: CloudSettings = {
     HttpModule,
     IonicModule.forRoot(MyApp),
     CloudModule.forRoot(cloudSettings)
+    //InMemoryWebApiModule.forRoot(InMemoryDbServiceProvider)
   ],
   bootstrap: [IonicApp],
   entryComponents: [
@@ -96,4 +102,5 @@ const cloudSettings: CloudSettings = {
     GlobalServiceProvider
   ]
 })
+
 export class AppModule {}

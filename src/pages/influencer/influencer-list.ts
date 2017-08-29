@@ -8,7 +8,7 @@ import { InfluencerDetailPage } from './influencer-detail';
 @IonicPage()
 @Component({
   selector: 'page-influencer-list',
-  templateUrl: 'influencer-list.html',
+  templateUrl: 'influencer-list.html'
 })
 
 export class InfluencerListPage {

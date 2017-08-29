@@ -4,10 +4,10 @@ import { CampaignListPage } from './campaign-list';
 
 @NgModule({
   declarations: [
-    CampaignListPage,
+    CampaignListPage
   ],
   imports: [
-    IonicPageModule.forChild(CampaignListPage),
+    IonicPageModule.forChild(CampaignListPage)
   ],
   exports: [
     CampaignListPage
