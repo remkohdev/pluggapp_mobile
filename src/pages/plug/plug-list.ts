@@ -2,31 +2,38 @@ import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
 
 import { DataServiceProvider } from '../../providers/data/data-service';
-
+import { PlugDetailModelHelper } from './plug-detail-model-helper';
 import { PlugDetailPage } from './plug-detail';
+import { PlugModel } from '../../models/plug-model';
 
 @IonicPage()
 @Component({
   selector: 'page-plug-list',
-  templateUrl: 'plug-list.html'
+  templateUrl: 'plug-list.html',
+  providers: [
+    PlugDetailModelHelper
+  ]
 })
 
 export class PlugListPage {
 
-  plugs: Object = null;
+  plugs: any = null;
+  plugsArray: Array<PlugModel> = new Array<PlugModel>();
 
   constructor(public navCtrl: NavController,
               public navParams: NavParams,
-              public dataService: DataServiceProvider) {
+              public dataService: DataServiceProvider,
+              public plugDetailModelHelper: PlugDetailModelHelper) {
 
       // currently plugs are read-only from file
-      this.plugs = this.dataService.getCampaigns()
+      this.plugs = this.dataService.getPlugs()
       .then( (plugs) => {
         this.plugs = plugs;
       },
       (error) => {
         console.log("error: "+ error);
       });
+
   }
 
   itemSelected(item) {

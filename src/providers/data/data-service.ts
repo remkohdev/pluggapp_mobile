@@ -1,43 +1,26 @@
 import { Injectable } from '@angular/core';
-import { Http }       from '@angular/http';
+import { Http }       from '@angular/http';/* Response */
 import 'rxjs/add/operator/toPromise';
-//import { PlugModel } from '../models/plug-model';
+//import { Observable } from 'rxjs/Rx';
+//import { PlugModel } from '../../models/plug-model';
 
 @Injectable()
 export class DataServiceProvider {
 
-  public influencersApiHost: string = './assets/data/influencers.json';
-  public businessesApiHost: string = './assets/data/businesses.json';
-  public plugsApiHost: string = './assets/data/plugs.json';
+  public influencersFilePath: string = './assets/data/influencers.json';
+  public businessesFilePath: string = './assets/data/businesses.json';
+  public plugsFilePath: string = './assets/data/plugs.json';
   public plugsUrl = 'api/plugs';
+
+  public plugs: any;
 
   constructor(private http: Http) { }
 
-  public getInfluencers(): Promise<Object> {
-    return this.http.get(this.influencersApiHost)
-      .toPromise()
-      .then((response) => {
-        return response.json();
-      })
-      .catch((err) => {
-        console.log(err);
-      });
-  }
-
-  public getBusinesses(): Promise<Object> {
-    return this.http.get(this.businessesApiHost)
-      .toPromise()
-      .then((response) => {
-        return response.json();
-      })
-      .catch((err) => {
-        console.log(err);
-      });
-  }
-
-  // READ PLUGS FROM JSON FILE
-  public getCampaigns(): Promise<Object> {
-    return this.http.get(this.plugsApiHost)
+  /**
+    * Read Plugs from file
+    */
+  public getPlugs(): Promise<Object> {
+    return this.http.get(this.plugsFilePath)
       .toPromise()
       .then((response) => {
         return response.json();
@@ -48,12 +31,31 @@ export class DataServiceProvider {
   }
 
   /**
-  // READ PLUGS FROM IN-MEMORY-DB-SERVICE
-  getPlugs(): Promise<PlugModel[]> {
-    return this.http.get(this.plugsUrl)
-       .toPromise()
-       .then( response => response.json().data as PlugModel[] )
-       .catch();
+    * Read Influencers from file
+    */
+  public getInfluencers(): Promise<Object> {
+    return this.http.get(this.influencersFilePath)
+      .toPromise()
+      .then((response) => {
+        return response.json();
+      })
+      .catch((err) => {
+        console.log(err);
+      });
   }
-  */
+
+  /**
+    * Read Businesses from file
+    */
+  public getBusinesses(): Promise<Object> {
+    return this.http.get(this.businessesFilePath)
+      .toPromise()
+      .then((response) => {
+        return response.json();
+      })
+      .catch((err) => {
+        console.log(err);
+      });
+  }
+
 }
