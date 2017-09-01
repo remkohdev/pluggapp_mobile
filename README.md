@@ -8,7 +8,8 @@ Date: TBD
 Description: First prototype, minor update #2
 
 * Enable Service Workers in Ionic2
-
+* Adding Models
+* Adding Reactive Forms, https://angular.io/guide/reactive-forms
 
 ## 0.1.0
 Date: 2017-08-10
