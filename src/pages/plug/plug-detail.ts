@@ -1,24 +1,22 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
-import { PlugDetailModelHelper } from './plug-detail-model-helper';
+import { FormControl }            from '@angular/forms';
+import { PlugModel } from '../../models/plug-model';
 
 @IonicPage()
 @Component({
   selector: 'page-plug-detail',
   templateUrl: 'plug-detail.html',
-  providers: [
-    PlugDetailModelHelper
-  ]
+  providers: []
 })
 
 export class PlugDetailPage {
 
-  plug: Object = null;
+  plug: PlugModel = null;
   edit: boolean = null;
 
   constructor(public navCtrl: NavController,
-              public navParams: NavParams,
-              public plugDetailModelHelper: PlugDetailModelHelper) {
+              public navParams: NavParams) {
 
     this.plug = navParams.get("plug");
 
@@ -33,22 +31,9 @@ export class PlugDetailPage {
     this.edit = toggle;
   }
 
-  /** datepicker
-  showCalendar(plugDate){
-    var options = {
-      date: new Date(plugDate),
-      mode: 'date'
-    };
-    function onSuccess(date) {
-      plugDate = date;
-      console.log('Selected date: ' + plugDate);
-      return date;
-    }
-    function onError(error) {
-      console.log('Error: ' + error);
-    }
-    this.datePicker.show(options).then(onSuccess, onError);
+  onSubmit(formValue: any){
+    console.log(formValue);
+    //this.plug = formValue;
   }
-  */
 
 }

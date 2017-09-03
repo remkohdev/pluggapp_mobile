@@ -2,7 +2,7 @@ import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
 
 import { DataServiceProvider } from '../../providers/data/data-service';
-import { PlugDetailModelHelper } from './plug-detail-model-helper';
+
 import { PlugDetailPage } from './plug-detail';
 import { PlugModel } from '../../models/plug-model';
 
@@ -10,9 +10,7 @@ import { PlugModel } from '../../models/plug-model';
 @Component({
   selector: 'page-plug-list',
   templateUrl: 'plug-list.html',
-  providers: [
-    PlugDetailModelHelper
-  ]
+  providers: [  ]
 })
 
 export class PlugListPage {
@@ -22,8 +20,7 @@ export class PlugListPage {
 
   constructor(public navCtrl: NavController,
               public navParams: NavParams,
-              public dataService: DataServiceProvider,
-              public plugDetailModelHelper: PlugDetailModelHelper) {
+              public dataService: DataServiceProvider) {
 
       // currently plugs are read-only from file
       this.plugs = this.dataService.getPlugs()

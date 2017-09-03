@@ -6,6 +6,7 @@ import { IonicApp, IonicModule, IonicErrorHandler } from 'ionic-angular';
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
 import { CloudSettings, CloudModule } from '@ionic/cloud-angular';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 import { MyApp } from './app.component';
 
@@ -73,7 +74,9 @@ const cloudSettings: CloudSettings = {
     BrowserModule,
     HttpModule,
     IonicModule.forRoot(MyApp),
-    CloudModule.forRoot(cloudSettings)
+    CloudModule.forRoot(cloudSettings),
+    FormsModule,
+    ReactiveFormsModule
     //InMemoryWebApiModule.forRoot(InMemoryDbServiceProvider)
   ],
   bootstrap: [IonicApp],
