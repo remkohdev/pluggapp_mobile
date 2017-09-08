@@ -5,7 +5,6 @@ import { DataServiceProvider } from '../../providers/data/data-service';
 
 import { PlugDetailPage } from './plug-detail';
 import { PlugModel } from '../../models/plug-model';
-import { PlugDetailFormComponent } from '../../components/plug-detail-form/plug-detail-form';
 
 IonicPage()
 @Component({
@@ -22,7 +21,6 @@ export class PlugListPage {
               public navParams: NavParams,
               public dataService: DataServiceProvider) {
 
-      // currently plugs are read-only from file
       this.plugs = this.dataService.getPlugs()
       .then( (plugs) => {
         this.plugs = plugs;
@@ -30,10 +28,9 @@ export class PlugListPage {
       (error) => {
         console.log("error: "+ error);
       });
-
   }
 
-  itemSelected(item) {
+  onSelect(item) {
     this.navCtrl.push(PlugDetailPage, { plug: item });
   }
 

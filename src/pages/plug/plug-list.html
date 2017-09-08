@@ -13,7 +13,7 @@
   <h2>My Plugs</h2>
   <ion-list>
     <ion-item *ngFor="let plug of plugs.plugs"
-            (click)="itemSelected(plug)"
+            (click)="onSelect(plug)"
             [class.selected]="plug === selectedPlug">
         <h3>{{ plug.name }}</h3>
         <p><i>(Period: {{ plug.startdate }} to {{ plug.enddate }})</i></p>
