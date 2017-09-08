@@ -13,7 +13,8 @@
   <h2>My Plugs</h2>
   <ion-list>
     <ion-item *ngFor="let plug of plugs.plugs"
-            (click)="itemSelected(plug)">
+            (click)="itemSelected(plug)"
+            [class.selected]="plug === selectedPlug">
         <h3>{{ plug.name }}</h3>
         <p><i>(Period: {{ plug.startdate }} to {{ plug.enddate }})</i></p>
         <p><b>{{ plug.campaign_slogan }}</b></p>

@@ -5,12 +5,12 @@ import { DataServiceProvider } from '../../providers/data/data-service';
 
 import { PlugDetailPage } from './plug-detail';
 import { PlugModel } from '../../models/plug-model';
+import { PlugDetailFormComponent } from '../../components/plug-detail-form/plug-detail-form';
 
-@IonicPage()
+IonicPage()
 @Component({
   selector: 'page-plug-list',
-  templateUrl: 'plug-list.html',
-  providers: [  ]
+  templateUrl: 'plug-list.html'
 })
 
 export class PlugListPage {

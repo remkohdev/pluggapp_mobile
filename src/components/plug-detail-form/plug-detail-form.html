@@ -1,4 +1,46 @@
-<!-- Generated template for the PlugDetailFormComponent component -->
+<!-- Generated template for the PlugDetailForm component -->
 <div>
-  {{text}}
+  <form>
+  <ion-list>
+  <!--
+  <ion-item>
+    <ion-label for="id">id</ion-label>
+    <ion-input type="text" name="id" [(ngModel)]="plug.id" [attr.disabled]="true" ></ion-input>
+  </ion-item>
+  -->
+  <ion-item>
+    <ion-label for="name" stacked>name</ion-label>
+    <ion-input type="text" name="name" [(ngModel)]="plug.name" [disabled]="!edit"></ion-input>
+  </ion-item>
+  <ion-item>
+    <!-- (focus)="showCalendar(plug.enddate)" -->
+    <ion-label for="startdate" stacked>startdate</ion-label>
+    <ion-input type="text" name="startdate" [(ngModel)]="plug.startdate" [disabled]="!edit"></ion-input>
+  </ion-item>
+  <ion-item>
+    <ion-label for="enddate" stacked>enddate</ion-label>
+    <ion-input type="text" name="enddate" [(ngModel)]="plug.enddate" [disabled]="!edit"></ion-input>
+  </ion-item>
+  <ion-item>
+    <ion-label for="campaign_slogan" stacked>campaign_slogan</ion-label>
+    <ion-input type="text" name="campaign_slogan" [(ngModel)]="plug.campaign_slogan" [disabled]="!edit"></ion-input>
+  </ion-item>
+  <ion-item>
+    <ion-label for="influencer_id" stacked>influencer_id</ion-label>
+    <ion-input type="text" name="influencer_id" [(ngModel)]="plug.influencer_id" [disabled]="!edit"></ion-input>
+  </ion-item>
+  <ion-item>
+    <ion-label for="business_id" stacked>business_id</ion-label>
+    <ion-input type="text" name="business_id" [(ngModel)]="plug.business_id" [disabled]="!edit"></ion-input>
+  </ion-item>
+  <ion-item>
+    <ion-label for="amount" stacked>amount</ion-label>
+    <ion-input type="text" name="amount" [(ngModel)]="plug.amount" [disabled]="!edit"></ion-input>
+  </ion-item>
+  </ion-list>
+
+  <div padding>
+    <button ion-button color="primary" (click)="toggleEdit(!edit)">{{edit? "save" : "edit"}}</button>
+  </div>
+  </form>
 </div>

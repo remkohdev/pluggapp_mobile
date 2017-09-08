@@ -13,4 +13,5 @@ import { PlugDetailFormComponent } from './plug-detail-form';
     PlugDetailFormComponent
   ]
 })
-export class PlugDetailFormComponentModule {}
+
+export class PlugDetailFormModule {}

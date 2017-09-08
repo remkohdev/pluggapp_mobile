@@ -1,22 +1,32 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 
-/**
- * Generated class for the PlugDetailFormComponent component.
- *
- * See https://angular.io/docs/ts/latest/api/core/index/ComponentMetadata-class.html
- * for more info on Angular Components.
- */
+import { PlugModel } from '../../models/plug-model';
+
 @Component({
   selector: 'plug-detail-form',
   templateUrl: 'plug-detail-form.html'
 })
+
 export class PlugDetailFormComponent {
 
-  text: string;
+  @Input() plug: PlugModel = null;
+  edit: boolean = null;
 
-  constructor() {
-    console.log('Hello PlugDetailFormComponent Component');
-    this.text = 'Hello World';
+  constructor(){
+
+      this.edit = false;
+  }
+
+  toggleEdit(toggle){
+    if(this.edit==true){
+      // @todo save edits
+    }
+    this.edit = toggle;
+  }
+
+  onSubmit(formValue: any){
+    console.log(formValue);
+    //this.plug = formValue;
   }
 
 }

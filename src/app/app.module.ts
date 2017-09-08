@@ -30,6 +30,9 @@ import { NotificationListPage } from '../pages/notification/notification-list';
 //import { PlugDetailFormComponent } from '../components/plug-detail-form/plug-detail-form';
 //import { PlugModel } from '../models/plug-model';
 
+import { PlugDetailFormComponent } from '../components/plug-detail-form/plug-detail-form';
+import {CUSTOM_ELEMENTS_SCHEMA} from '@angular/core';
+
 import { AuthServiceProvider } from '../providers/auth/auth-service';
 import { DataServiceProvider } from '../providers/data/data-service';
 //import { InMemoryDbServiceProvider } from '../providers/data/in-memory-db-service';
@@ -68,7 +71,8 @@ const cloudSettings: CloudSettings = {
     InfluencerListPage,
     InfluencerDetailPage,
     CampaignListPage,
-    NotificationListPage
+    NotificationListPage,
+    PlugDetailFormComponent
   ],
   imports: [
     BrowserModule,
@@ -103,7 +107,8 @@ const cloudSettings: CloudSettings = {
     AuthServiceProvider,
     DataServiceProvider,
     GlobalServiceProvider
-  ]
+  ],
+  schemas:     [CUSTOM_ELEMENTS_SCHEMA]   
 })
 
 export class AppModule {}
